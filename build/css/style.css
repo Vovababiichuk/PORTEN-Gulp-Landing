@@ -159,7 +159,6 @@ body.dark {
   background-size: cover;
   display: inline-block;
   -webkit-transition: scale 0.3s ease-in-out;
-  -o-transition: scale 0.3s ease-in-out;
   transition: scale 0.3s ease-in-out;
 }
 
@@ -271,7 +270,6 @@ body.dark {
 .menu .menu__link {
   color: gray;
   -webkit-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   background-color: none;
   padding: 30.8px 15px;
@@ -333,7 +331,6 @@ body.dark {
 .btn-register:hover {
   color: #ffffff;
   -webkit-transition: color 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
@@ -413,7 +410,6 @@ body.dark {
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
     -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
-    -o-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
     transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
     top: 8px;
   }
@@ -425,7 +421,6 @@ body.dark {
             transform: rotate(-45deg);
     bottom: 10px;
     -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
-    -o-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
     transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
   }
 
@@ -443,7 +438,6 @@ body.dark {
     width: 100%;
     background: red;
     -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
-    -o-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
     transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
   }
 
@@ -466,7 +460,6 @@ body.dark {
         -ms-transform: scale(1);
             transform: scale(1);
     -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
-    -o-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
     transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
   }
 }
