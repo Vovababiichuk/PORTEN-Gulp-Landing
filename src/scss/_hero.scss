@@ -43,13 +43,5 @@
 	line-height: 1.5;
 	max-width: 730px;
 	text-align: center;
-	@include fz(16, 14);
-}
-
-/* Стилі, які застосовуються тільки в Google Chrome */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-	/* ваші стилі для Google Chrome */
-	.hero__text {
-		@include fz(16, 10);
-	}
+	@include fz(16, 12);
 }
