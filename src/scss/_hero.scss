@@ -43,4 +43,5 @@
 	line-height: 1.5;
 	max-width: 730px;
 	text-align: center;
+	@include fz(16, 14);
 }

@@ -423,6 +423,7 @@ body.dark {
   line-height: 1.5;
   max-width: 730px;
   text-align: center;
+  font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1920 - 375));
 }
 
 @media (max-width: 1439.98px) {
