@@ -1,0 +1,79 @@
+// Container
+.container {
+	max-width: ($containerWidth + $containerPadding) + px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 $containerSidePadding + px;
+
+	@media (max-width: $breakpoint1450) {
+		max-width: 1200px;
+	}
+
+	@media (max-width: $breakpoint992) {
+		max-width: 970px;
+	}
+
+	@media (max-width: $breakpoint768) {
+		max-width: 740px;
+	}
+
+	@media (max-width: $breakpoint480) {
+		max-width: none;
+	}
+}
+
+// Body & Locked
+body {
+	font-family: $fontMain;
+	font-weight: 400;
+	color: $colorLight;
+	font-size: 14px;
+  background-color: $colorDark;
+
+	&.locked {
+		overflow: hidden;
+	}
+	// Dark mode styles
+	&.dark {
+		background: #242424;
+	}
+}
+
+// Animations
+// Fade
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+// ===================Global styles PORTEN===================
+
+.icon {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+	transition: scale 0.3s ease-in-out;
+
+	&:hover {
+		scale: 1.2;
+	}
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}

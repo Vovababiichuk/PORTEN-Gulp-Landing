@@ -1,0 +1,220 @@
+// ========================= [ Header styles ] =========================
+.header {
+	background-color: $colorDark;
+
+	&.fixed {
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+	}
+}
+.navbar {
+	background-color: $colorDarkGray;
+}
+
+.navbar__inner {
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	a {
+		color: white;
+	}
+
+	&__img {
+		width: 104px;
+		height: 24px;
+	}
+}
+
+.nav__inner {
+	display: flex;
+	align-items: center;
+	gap: 32px;
+}
+.nav__actions {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.nav__content {
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+// ========================== [ Menu styles ] ==========================
+.menu {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+
+	// .menu__item
+	&__item {
+		display: flex;
+		position: relative;
+	}
+
+	// .menu__item-link
+	.menu__link {
+		color: gray;
+		transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+		background-color: none;
+		padding: 30.8px 15px;
+
+		&:hover {
+			color: #ffffff;
+			background-color: #1f1f1f;
+		}
+	}
+
+	// Mobile menu styles
+	@media screen and (max-width: $burgerBreakpoint) {
+		position: fixed;
+		background: $burgerColor;
+		left: 0;
+		top: 0;
+		height: 100vh;
+		width: 100vw;
+		display: none;
+
+		&.active {
+			display: flex;
+			left: 0;
+			top: 0;
+			height: 100vh;
+			width: 100vw;
+			flex-direction: column;
+			pointer-events: all;
+			justify-content: center;
+			align-items: center;
+			z-index: 2;
+			animation: fade 0.1s linear;
+		}
+	}
+}
+
+// ========================= [ Burger styles ] =========================
+.burger {
+	display: none;
+	background: transparent;
+	z-index: 3;
+	@media screen and (max-width: $burgerBreakpoint) {
+		display: flex;
+		position: relative;
+		height: 20px;
+		width: 30px;
+
+		&.active {
+			&:before {
+				background: $burgerActiveColor;
+				transform: rotate(45deg);
+				transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+				top: 8px;
+			}
+
+			&:after {
+				background: $burgerActiveColor;
+				transform: rotate(-45deg);
+				bottom: 10px;
+				transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+			}
+
+			& span {
+				transform: scale(0);
+			}
+		}
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			height: 2px;
+			width: 100%;
+			background: $burgerColor;
+			transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+		}
+
+		&:before {
+			top: 0;
+		}
+
+		&::after {
+			bottom: 0;
+		}
+
+		span {
+			position: absolute;
+			top: 9px;
+			right: 0;
+			width: 100%;
+			background: $burgerColor;
+			height: 2px;
+			transform: scale(1);
+			transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
+		}
+	}
+}
+
+// ======================== [ Header-Top ] =========================
+.header__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 12px;
+	color: gray;
+	padding: 14px 0;
+}
+
+.top__info-phone::before {
+	content: '';
+	background-image: url('../img/header/phone.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	margin-right: 15px;
+	margin-bottom: -3px;
+}
+
+.btn-logout::before {
+	content: '';
+	background-image: url('../img/header/logout.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	margin-right: 19px;
+	margin-bottom: -3px;
+}
+
+.btn-login:hover,
+.btn-register:hover {
+	color: $colorLight;
+	transition: color 0.3s ease-in-out;
+}
+
+.icon--search {
+	content: '';
+	background-image: url('../img/header/search.svg');
+	width: 17px;
+	height: 17px;
+}
+
+.icon--cart {
+	content: '';
+	background-image: url('../img/header/cart.svg');
+	width: 23px;
+	height: 18px;
+}
+
