@@ -424,7 +424,6 @@ body.dark {
   line-height: 1.5;
   max-width: 730px;
   text-align: center;
-  font-size: calc(14px + (16 - 14) * (100vw - 375px) / (1920 - 375));
 }
 
 @media (max-width: 1439.98px) {
@@ -578,6 +577,10 @@ body.dark {
   .menu__item:nth-child(3) {
     border-bottom: 1px solid gray;
   }
+
+  .hero__text {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 384px) {
@@ -589,5 +592,11 @@ body.dark {
 @media (max-width: 374.98px) {
   .container {
     max-width: none;
+  }
+}
+
+@media screen and (max-width: 374.98px) {
+  .hero__text {
+    font-size: 14px;
   }
 }
