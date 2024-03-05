@@ -155,5 +155,6 @@ exports.build = build
 exports.watch = watch
 exports.default = watch
 
-
+// deployment settings
+exports.build = series(copyfontawesomeWebfontstask, scssTask, jsTask);
 
