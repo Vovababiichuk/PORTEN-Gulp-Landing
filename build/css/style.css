@@ -449,7 +449,7 @@ body.dark {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: #0f0f0f;
+    background: #fefefe;
     -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
     transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
   }
@@ -467,7 +467,7 @@ body.dark {
     top: 9px;
     right: 0;
     width: 100%;
-    background: #0f0f0f;
+    background: #fefefe;
     height: 2px;
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
@@ -491,15 +491,20 @@ body.dark {
   }
 
   .navbar__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding: 12px 0;
+  }
+
+  .menu__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top: 1px solid gray;
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .menu__item:nth-child(3) {
+    border-bottom: 1px solid gray;
   }
 }
 
