@@ -215,6 +215,10 @@ body.dark {
           align-items: center;
 }
 
+.logo {
+  z-index: 10;
+}
+
 .logo a {
   color: white;
 }
