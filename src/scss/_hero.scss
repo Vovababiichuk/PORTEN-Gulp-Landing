@@ -46,9 +46,3 @@
 	text-align: center;
 	@include fz(16, 14);
 }
-
-@media screen and (max-width: $breakpoint375) {
-	.hero__text {
-		font-size: 13px;
-	}
-}

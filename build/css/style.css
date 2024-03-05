@@ -591,9 +591,3 @@ body.dark {
     max-width: none;
   }
 }
-
-@media screen and (max-width: 374.98px) {
-  .hero__text {
-    font-size: 13px;
-  }
-}
