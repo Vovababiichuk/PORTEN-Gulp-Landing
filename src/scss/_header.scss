@@ -253,31 +253,6 @@ z-index: 10;
 	}
 }
 
-// .menu {
-// 	display: flex;
-// 	align-items: center;
-// 	text-transform: uppercase;
-
-// 	// .menu__item
-// 	&__item {
-// 		display: flex;
-// 		position: relative;
-// 	}
-
-// 	// .menu__item-link
-// 	.menu__link {
-// 		color: gray;
-// 		transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-// 		background-color: none;
-// 		padding: 30px 0;
-
-// 		&:hover {
-// 			color: #ffffff;
-// 			background-color: #1f1f1f;
-// 		}
-// 	}
-// }
-
 @media (max-width: 384px) {
 	.top__info {
 		font-size: 10px;
