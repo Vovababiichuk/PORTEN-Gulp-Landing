@@ -15,7 +15,7 @@
 }
 
 .navbar__inner {
-  display: flex;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -27,7 +27,7 @@
 
 	&__img {
 		width: 104px;
-		height: 24px;
+		height: 27px;
 	}
 }
 
@@ -36,6 +36,7 @@
 	align-items: center;
 	gap: 32px;
 }
+
 .nav__actions {
 	display: flex;
 	align-items: center;
@@ -218,3 +219,31 @@
 	height: 18px;
 }
 
+// ============= [Media queries] ==================================
+
+@media screen and (max-width: $breakpoint768) {
+	.nav__actions {
+		display: none;
+	}
+
+	.header__top {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 8px;
+		// align-items: center;
+		padding: 14px 0;
+	}
+
+	.navbar__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+@media (max-width: 384px) {
+	
+	.top__info {
+		font-size: 10px;
+	}
+}

@@ -110,8 +110,15 @@ legend {
   display: block;
 }
 
+.main__body {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0px;
+}
+
 .container {
-  max-width: 1110px;
+  max-width: 1140px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
@@ -214,7 +221,7 @@ body.dark {
 
 .logo__img {
   width: 104px;
-  height: 24px;
+  height: 27px;
 }
 
 .nav__inner {
@@ -348,22 +355,28 @@ body.dark {
   height: 18px;
 }
 
-@media (max-width: 1449.98px) {
+@media (max-width: 1439.98px) {
   .container {
     max-width: 1200px;
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1023.98px) {
   .container {
     max-width: 970px;
   }
 }
 
-@media screen and (max-width: 991.98px) {
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 740px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
   .menu {
     position: fixed;
-    background: red;
+    background: #0f0f0f;
     left: 0;
     top: 0;
     height: 100vh;
@@ -436,7 +449,7 @@ body.dark {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: red;
+    background: #0f0f0f;
     -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
     transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
   }
@@ -454,7 +467,7 @@ body.dark {
     top: 9px;
     right: 0;
     width: 100%;
-    background: red;
+    background: #0f0f0f;
     height: 2px;
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
@@ -462,15 +475,41 @@ body.dark {
     -webkit-transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
     transition: cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.3s all;
   }
-}
 
-@media (max-width: 767.98px) {
-  .container {
-    max-width: 740px;
+  .nav__actions {
+    display: none;
+  }
+
+  .header__top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 8px;
+    padding: 14px 0;
+  }
+
+  .navbar__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-@media (max-width: 479.98px) {
+@media (max-width: 384px) {
+  .top__info {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 374.98px) {
   .container {
     max-width: none;
   }
