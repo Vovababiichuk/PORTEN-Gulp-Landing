@@ -508,6 +508,10 @@ body.dark {
   text-align: center;
 }
 
+.season {
+  border-left-color: red;
+}
+
 .season__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -802,7 +806,7 @@ body.dark {
   }
 
   .season__catalog-content {
-    top: 50%;
+    top: 60%;
   }
 }
 

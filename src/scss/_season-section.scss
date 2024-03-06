@@ -1,3 +1,7 @@
+.season {
+	border-left-color: red;
+}
+
 .season__inner {
 	display: flex;
 	justify-content: space-between;
@@ -51,7 +55,7 @@
 	text-align: center;
 
 	@media screen and (max-width: $breakpoint768 ) {
-		top: 50%;
+		top: 60%;
 	}
 }
 
