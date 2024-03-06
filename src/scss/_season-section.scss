@@ -80,9 +80,9 @@
 	@media screen and (max-width: 590px) {
 		max-width: 490px;
 	}
-	@media screen and (max-width: 520px) {
-		max-width: 360px;
-	}
+	// @media screen and (max-width: 520px) {
+	// 	max-width: 360px;
+	// }
 	
 }
 
@@ -101,10 +101,10 @@
 	height: 264px;
 	object-fit: cover;
 
-	@media screen and (max-width: 520px) {
-		width: 107.5px;
-		height: 132px;
-	}
+	// @media screen and (max-width: 520px) {
+	// 	width: 107.5px;
+	// 	height: 132px;
+	// }
 }
 
 .swiper {

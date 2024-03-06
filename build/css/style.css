@@ -814,17 +814,6 @@ body.dark {
   }
 }
 
-@media screen and (max-width: 520px) {
-  .swiper {
-    max-width: 360px;
-  }
-
-  .swiper-slide img {
-    width: 107.5px;
-    height: 132px;
-  }
-}
-
 @media (max-width: 384px) {
   .top__info {
     font-size: 10px;
