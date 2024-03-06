@@ -65,11 +65,11 @@ var swiper = new Swiper(".mySwiper", {
 		},
 		1024: {
 			slidesPerView: 3,
-			spaceBetween: 50,
+			spaceBetween: 40,
 		},
 		1440: {
 			slidesPerView: 4,
-			spaceBetween: 50,
+			spaceBetween: 40,
 		},
 		1920: {
 			slidesPerView: 3,
