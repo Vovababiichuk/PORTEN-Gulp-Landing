@@ -508,10 +508,6 @@ body.dark {
   text-align: center;
 }
 
-.season {
-  margin-bottom: 500px;
-}
-
 .season__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -622,6 +618,14 @@ body.dark {
 
   .season__cards {
     padding: 0 20px;
+  }
+
+  .season__cards--title {
+    padding-top: 60px;
+  }
+
+  .season__catalog {
+    padding-top: 60px;
   }
 
   .swiper {
