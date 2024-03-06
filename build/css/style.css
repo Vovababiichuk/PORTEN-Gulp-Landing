@@ -518,6 +518,9 @@ body.dark {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -525,8 +528,7 @@ body.dark {
 }
 
 .season__cards {
-  width: 100%;
-  max-width: 1040px;
+  padding: 0 80px;
 }
 
 .season__cards--title {
@@ -545,11 +547,11 @@ body.dark {
   position: relative;
 }
 
-.season__img {
+.season__catalog-img {
   max-width: 100%;
 }
 
-.season__content {
+.season__catalog-content {
   position: absolute;
   top: 74%;
   left: 50%;
@@ -575,7 +577,7 @@ body.dark {
 }
 
 .swiper {
-  width: 800px;
+  max-width: 800px;
   height: 440px;
 }
 
@@ -620,15 +622,48 @@ body.dark {
   /* колір активної крапки */
 }
 
+@media screen and (max-width: 1920px) {
+  .season__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .season__cards {
+    padding: 0 20px;
+  }
+
+  .swiper {
+    max-width: 1090px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+  }
+}
+
 @media (max-width: 1439.98px) {
   .container {
     max-width: 1200px;
   }
 }
 
+@media screen and (max-width: 1439.98px) {
+  .swiper {
+    max-width: 800px;
+  }
+}
+
 @media (max-width: 1023.98px) {
   .container {
     max-width: 970px;
+  }
+}
+
+@media screen and (max-width: 868px) {
+  .swiper {
+    max-width: 540px;
   }
 }
 
@@ -770,6 +805,23 @@ body.dark {
 
   .menu__item:nth-child(3) {
     border-bottom: 1px solid gray;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .swiper {
+    max-width: 490px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .swiper {
+    max-width: 360px;
+  }
+
+  .swiper-slide img {
+    width: 107.5px;
+    height: 132px;
   }
 }
 

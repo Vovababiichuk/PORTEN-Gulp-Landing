@@ -34,13 +34,45 @@ window.addEventListener('scroll', function() {
     }
 });
 
-
-
 var swiper = new Swiper(".mySwiper", {
 	slidesPerView: 3,
 	spaceBetween: 50,
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
+	},
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 15,
+		},
+		375: {
+			slidesPerView: 2,
+			spaceBetween: 15,
+		},
+		590: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 50,
+		},
+		868: {
+			slidesPerView: 3,
+			spaceBetween: 50,
+		},
+		1024: {
+			slidesPerView: 3,
+			spaceBetween: 50,
+		},
+		1440: {
+			slidesPerView: 4,
+			spaceBetween: 50,
+		},
+		1920: {
+			slidesPerView: 3,
+			spaceBetween: 50,
+		},
 	},
 });
