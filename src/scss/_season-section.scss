@@ -45,11 +45,16 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
+
+	@media screen and (max-width: $breakpoint768 ) {
+		top: 50%;
+	}
 }
 
 .season__content--title {
 	margin-bottom: 30px;
 	text-transform: uppercase;
+	font-size: clamp(24px, 1.007rem + 1.04vw, 36px);
 }
 
 .card__link--season {
@@ -80,17 +85,9 @@
 	@media screen and (max-width: 590px) {
 		max-width: 490px;
 	}
-	// @media screen and (max-width: 520px) {
-	// 	max-width: 360px;
-	// }
-	
 }
 
 .swiper-slide {
-	// font-size: 18px;
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;
 	@media screen and (max-width: 1920px) {
 		text-align: center;
 	}
@@ -100,30 +97,25 @@
 	width: 215px;
 	height: 264px;
 	object-fit: cover;
-
-	// @media screen and (max-width: 520px) {
-	// 	width: 107.5px;
-	// 	height: 132px;
-	// }
 }
 
 .swiper {
 	.swiper-pagination {
 		display: flex;
-		justify-content: center; /* вирівнювання по центру */
-		align-items: center; /* вирівнювання по вертикалі по центру */
-		margin-top: 20px; /* відступ зверху */
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px;
 	}
 
 	.swiper-pagination-bullet {
-		width: 10px; /* ширина крапки */
-		height: 10px; /* висота крапки */
-		background-color: #333; /* колір крапки */
-		border-radius: 50%; /* для закругленого вигляду */
-		margin: 0 5px; /* відступи між крапками */
+		width: 12px;
+		height: 12px;
+		background-color: #333;
+		border-radius: 50%;
+		margin: 0 5px;
 	}
 
 	.swiper-pagination-bullet-active {
-		background-color: #252525; /* колір активної крапки */
+		background-color: #34261f;
 	}
 }
