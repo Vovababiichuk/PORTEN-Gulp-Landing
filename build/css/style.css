@@ -131,6 +131,7 @@ body {
   font-weight: 400;
   color: #ffffff;
   font-size: 14px;
+  line-height: 1.2;
   background-color: #000000;
 }
 
@@ -204,26 +205,70 @@ body.dark {
   color: #ffffff;
 }
 
-/* Стилі прокрутки */
+.title::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  background-color: #ffffff;
+  margin-top: 36px;
+  margin: 36px auto 0;
+}
+
+.button {
+  border: 1px solid #fff;
+  padding: 12px 28px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #252525;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.card__link {
+  background-color: #191b1c;
+  margin-bottom: 15px;
+  padding: 22px 26px;
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.card__price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #d0d0d0;
+}
 
 ::-webkit-scrollbar {
   width: 10px;
   background-color: transparent;
 }
 
-/* Стилі показника прокрутки */
-
 ::-webkit-scrollbar-thumb {
   background-color: #34261f;
-  /* Оранжевий колір */
   border-radius: 5px;
 }
 
-/* Зміна вигляду при наведенні на показник */
-
 ::-webkit-scrollbar-thumb:hover {
   background-color: #3f2d25;
-  /* Темно-оранжевий колір */
 }
 
 .header {
@@ -463,6 +508,116 @@ body.dark {
   line-height: 1.5;
   max-width: 730px;
   text-align: center;
+}
+
+.season {
+  margin-bottom: 500px;
+}
+
+.season__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 730px;
+}
+
+.season__cards {
+  width: 100%;
+  max-width: 1040px;
+}
+
+.season__cards--title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.season__cards-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.season__catalog {
+  max-width: 880px;
+  position: relative;
+}
+
+.season__img {
+  max-width: 100%;
+}
+
+.season__content {
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.season__content--title {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.card__link--season {
+  margin-bottom: 25px;
+  display: block;
+}
+
+.card__title--season {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.swiper {
+  width: 800px;
+  height: 440px;
+}
+
+.swiper-slide img {
+  width: 215px;
+  height: 264px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper .swiper-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* вирівнювання по центру */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* вирівнювання по вертикалі по центру */
+  margin-top: 20px;
+  /* відступ зверху */
+}
+
+.swiper .swiper-pagination-bullet {
+  width: 10px;
+  /* ширина крапки */
+  height: 10px;
+  /* висота крапки */
+  background-color: #333;
+  /* колір крапки */
+  border-radius: 50%;
+  /* для закругленого вигляду */
+  margin: 0 5px;
+  /* відступи між крапками */
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-color: #252525;
+  /* колір активної крапки */
 }
 
 @media (max-width: 1439.98px) {

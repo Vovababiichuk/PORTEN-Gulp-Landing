@@ -35,9 +35,8 @@ body {
 	font-weight: 400;
 	color: $colorLight;
 	font-size: 14px;
-  background-color: $colorDark;
-
-	
+	line-height: 1.2;
+	background-color: $colorDark;
 
 	&.locked {
 		overflow: hidden;
@@ -102,19 +101,64 @@ body {
 	color: $colorLight;
 }
 
-/* Стилі прокрутки */
+.title::after {
+	content: '';
+	display: block;
+	width: 120px;
+	height: 1px;
+	background-color: $colorLight;
+	margin-top: 36px;
+	margin: 36px auto 0;
+}
+
+.button {
+	border: 1px solid #fff;
+	padding: 12px 28px;
+	font-size: 18px;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: #252525;
+		transition: background-color 0.3s ease-in-out;
+	}
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-family: $fontSecondary;
+
+	&__link {
+		background-color: #191b1c;
+		margin-bottom: 15px;
+		padding: 22px 26px;
+	}
+
+	&__title {
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	&__price {
+		font-size: 16px;
+		font-weight: 700;
+		color: $colorLightGray;
+	}
+}
+
+
+
 ::-webkit-scrollbar {
 	width: 10px;
 	background-color: transparent;
 }
 
-/* Стилі показника прокрутки */
 ::-webkit-scrollbar-thumb {
-	background-color: #34261f; /* Оранжевий колір */
+	background-color: #34261f;
 	border-radius: 5px;
 }
 
-/* Зміна вигляду при наведенні на показник */
 ::-webkit-scrollbar-thumb:hover {
-	background-color: #3f2d25;; /* Темно-оранжевий колір */
+	background-color: #3f2d25;
 }

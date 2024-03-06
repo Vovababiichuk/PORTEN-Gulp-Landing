@@ -1,0 +1,98 @@
+.season {
+	margin-bottom: 500px;
+}
+
+.season__inner {
+	display: flex;
+	// justify-content: space-between;
+	align-items: center;
+	height: 730px;
+}
+
+.season__cards {
+	width: 100%;
+	max-width: 1040px;
+}
+
+.season__cards--title {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.season__cards-list {
+	display: flex;
+}
+
+.season__catalog {
+	max-width: 880px;
+	position: relative;
+}
+
+.season__img {
+	max-width: 100%;
+}
+
+.season__content {
+	position: absolute;
+	top: 74%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.season__content--title {
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.card__link--season {
+	margin-bottom: 25px;
+	display: block;
+}
+
+.card__title--season {
+	margin-bottom: 10px;
+	display: block;
+}
+
+// Swiper Slider
+
+.swiper {
+	width: 800px;
+	height: 440px;
+}
+
+// .swiper-slide {
+// 	text-align: center;
+// 	font-size: 18px;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// }
+
+.swiper-slide img {
+	width: 215px;
+	height: 264px;
+	object-fit: cover;
+}
+
+.swiper {
+	.swiper-pagination {
+		display: flex;
+		justify-content: center; /* вирівнювання по центру */
+		align-items: center; /* вирівнювання по вертикалі по центру */
+		margin-top: 20px; /* відступ зверху */
+	}
+
+	.swiper-pagination-bullet {
+		width: 10px; /* ширина крапки */
+		height: 10px; /* висота крапки */
+		background-color: #333; /* колір крапки */
+		border-radius: 50%; /* для закругленого вигляду */
+		margin: 0 5px; /* відступи між крапками */
+	}
+
+	.swiper-pagination-bullet-active {
+		background-color: #252525; /* колір активної крапки */
+	}
+}
