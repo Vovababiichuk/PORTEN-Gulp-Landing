@@ -24,16 +24,16 @@ function burgerMenu() {
 }
 burgerMenu()
 
-window.addEventListener('scroll', function() {
-    const navbar = document.querySelector('navbar');
-    const scrollPosition = window.scrollY;
+// window.addEventListener('scroll', function() {
+//     const navbar = document.querySelector('navbar');
+//     const scrollPosition = window.scrollY;
 
-    if (scrollPosition > 10) {
-        navbar.classList.add('sticky');
-    } else {
-        navbar.classList.remove('sticky');
-    }
-});
+//     if (scrollPosition > 10) {
+//         navbar.classList.add('sticky');
+//     } else {
+//         navbar.classList.remove('sticky');
+//     }
+// });
 
 var swiper = new Swiper(".mySwiper", {
 	slidesPerView: 3,

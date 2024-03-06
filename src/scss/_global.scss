@@ -47,18 +47,6 @@ body {
 	}
 }
 
-// Animations
-// Fade
-@keyframes fade {
-	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
 // ===================Global styles PORTEN===================
 
 .icon {
@@ -86,12 +74,12 @@ body {
 	overflow: hidden;
 }
 
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1000;
-}
+// .sticky {
+// 	position: fixed;
+// 	top: 0;
+// 	width: 100%;
+// 	z-index: 1000;
+// }
 
 .title {
 	font-family: $fontSecondary;

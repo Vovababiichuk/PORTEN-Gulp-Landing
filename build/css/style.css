@@ -141,26 +141,6 @@ body.dark {
   background: #242424;
 }
 
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 .icon {
   background-repeat: no-repeat;
   background-position: center;
@@ -186,13 +166,6 @@ body.dark {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
 }
 
 .title {
@@ -271,14 +244,6 @@ body.dark {
 
 .header {
   background-color: #000000;
-}
-
-.header.fixed {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  z-index: 2;
 }
 
 .navbar {
@@ -506,10 +471,6 @@ body.dark {
   line-height: 1.5;
   max-width: 730px;
   text-align: center;
-}
-
-.season {
-  border-left-color: red;
 }
 
 .season__inner {
@@ -803,6 +764,10 @@ body.dark {
 
   .menu__item:nth-child(3) {
     border-bottom: 1px solid gray;
+  }
+
+  .season__cards {
+    padding: 0 0;
   }
 
   .season__catalog-content {
