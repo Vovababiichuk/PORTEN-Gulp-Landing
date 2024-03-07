@@ -476,10 +476,6 @@ body.dark {
   text-align: center;
 }
 
-.season-collection {
-  margin-bottom: 500px;
-}
-
 .container-inner {
   width: 100%;
   max-width: 1920px;
@@ -625,6 +621,21 @@ body.dark {
 .collection__content--button {
   margin: 0 auto;
   display: block;
+}
+
+.novelties {
+  padding: 120px 0;
+}
+
+.novelties__inner--title {
+  margin-bottom: 80px;
+}
+
+.novelties__cards-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2;
+  grid-gap: 24px;
 }
 
 @media screen and (max-width: 1920px) {

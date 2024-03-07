@@ -1,0 +1,15 @@
+.novelties {
+	padding: 120px 0;
+}
+
+.novelties__inner--title {
+	margin-bottom: 80px;
+}
+
+.novelties__cards-list {
+	display: grid;
+    grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 2;
+    // grid-auto-rows: minmax(100px, auto);
+    grid-gap: 24px;
+}
