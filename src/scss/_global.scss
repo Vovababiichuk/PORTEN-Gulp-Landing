@@ -34,7 +34,7 @@ body {
 	font-family: $fontMain;
 	font-weight: 400;
 	color: $colorLight;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.2;
 	background-color: $colorDark;
 
@@ -127,12 +127,20 @@ body {
 	&__title {
 		font-size: 18px;
 		font-weight: 400;
+		max-height: 50px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 
 	&__price {
 		font-size: 16px;
 		font-weight: 700;
 		color: $colorLightGray;
+		max-height: 50px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 }
 

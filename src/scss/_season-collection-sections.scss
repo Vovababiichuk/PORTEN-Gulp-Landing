@@ -18,8 +18,8 @@
 // ======================[Season Style]===================
 
 .season__cards {
-	grid-column: 1 / span 1; /* займає першу колонку */
-	grid-row: 1; /* знаходиться у верхньому рядку */
+	grid-column: 1 / span 1;
+	grid-row: 1;
 
 	@media screen and (max-width: 1920px) {
 		margin-bottom: 60px;
@@ -47,8 +47,8 @@
 }
 
 .season__catalog {
-	grid-column: 2 / span 1; /* займає другу колонку */
-	grid-row: 1; /* знаходиться у верхньому рядку */
+	grid-column: 2 / span 1;
+	grid-row: 1;
 
 	position: relative;
 
@@ -109,6 +109,10 @@
 .card__title--season {
 	margin-bottom: 10px;
 	display: block;
+	max-height: 50px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 // Swiper Slider
@@ -167,8 +171,8 @@
 // ======================[Collection Style]===================
 
 .collection__img {
-	grid-column: 1 / span 1; /* займає першу колонку */
-	grid-row: 2; /* знаходиться у нижньому рядку */
+	grid-column: 1 / span 1;
+	grid-row: 2;
 
 	background-image: url('/img/collection/collection.jpg');
 	background-repeat: no-repeat;
@@ -190,9 +194,9 @@
 }
 
 .collection__text {
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.5;
-	max-width: 630px;
+	max-width: 720px;
 	text-align: center;
 	margin-bottom: clamp(32px, -3.25rem + 5.83vw, 62px);
 
@@ -206,8 +210,8 @@
 }
 
 .collection__content {
-	grid-column: 2 / span 1; /* займає другу колонку */
-	grid-row: 2; /* знаходиться у нижньому рядку */
+	grid-column: 2 / span 1;
+	grid-row: 2;
 
 	align-self: center;
 	justify-self: center;

@@ -3,7 +3,6 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	max-height: 810px;
 	padding: 155px 0;
 	display: flex;
 	align-items: center;
@@ -39,9 +38,10 @@
 }
 
 .hero__text {
+	font-size: 16px;
 	text-transform: uppercase;
 	font-size: clamp(14px, 0.756rem + 0.51vw, 16px);
 	line-height: 1.5;
-	max-width: 730px;
+	max-width: 740px;
 	text-align: center;
 }
