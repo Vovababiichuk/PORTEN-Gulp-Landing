@@ -76,3 +76,9 @@ var swiper = new Swiper(".mySwiper", {
 		},
 	},
 });
+
+const footerFormBtn =document.getElementById('form-btn');
+
+footerFormBtn.addEventListener('click', () => {
+	alert('Сайт знаходиться в розробці')
+})

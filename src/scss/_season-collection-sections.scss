@@ -196,7 +196,7 @@
 .collection__text {
 	font-size: 16px;
 	line-height: 1.5;
-	max-width: 720px;
+	max-width: 680px;
 	text-align: center;
 	margin-bottom: clamp(32px, -3.25rem + 5.83vw, 62px);
 
@@ -215,7 +215,7 @@
 
 	align-self: center;
 	justify-self: center;
-	padding: 0 20px;
+	padding: 0 30px;
 
 	@media screen and (max-width: 1920px) {
 		grid-column: 1 / span 1;

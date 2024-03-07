@@ -112,6 +112,14 @@ body {
 	}
 }
 
+.button-footer {
+	background-color: $colorDarkGray;
+	font-size: 14px;
+	line-height: 1.5;
+	padding: 10px 20px;
+	color: $colorLightGray;
+}
+
 .card {
 	display: flex;
 	flex-direction: column;
@@ -143,7 +151,6 @@ body {
 		text-overflow: ellipsis;
 	}
 }
-
 
 ::-webkit-scrollbar {
 	width: 10px;

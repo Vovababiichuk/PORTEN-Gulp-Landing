@@ -5,13 +5,11 @@
 
 // Sections or Pages SCSS-files imports
 @import './header';
+
 @import './hero-section';
 @import './season-collection-sections';
 @import './novelties-section';
 @import './articles-section';
 @import './partners-section';
 
-// @import './footer';
-
-// Libs
-// @import './libs/swiper';
+@import './footer';
