@@ -460,8 +460,8 @@ body.dark {
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url("../img/hero/hero12.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url("../img/hero/hero12.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3))), url("../img/hero/hero12.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3)), url("../img/hero/hero12.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1269,8 +1269,20 @@ input {
     border-radius: 10px;
   }
 
+  .articles__content-title {
+    font-size: 14px;
+  }
+
+  .articles__content-text {
+    font-size: 14px;
+  }
+
+  .articles__content--button {
+    font-size: 14px;
+  }
+
   .articles__tags {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .articles__img--grid:nth-of-type(1) {
@@ -1366,10 +1378,6 @@ input {
 }
 
 @media screen and (max-width: 374.98px) {
-  .articles__content--button {
-    font-size: 16px;
-  }
-
   .articles__tags {
     font-size: 12px;
     max-height: 50px;

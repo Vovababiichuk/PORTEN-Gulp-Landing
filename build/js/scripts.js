@@ -24,17 +24,6 @@ function burgerMenu() {
 }
 burgerMenu()
 
-// window.addEventListener('scroll', function() {
-//     const navbar = document.querySelector('navbar');
-//     const scrollPosition = window.scrollY;
-
-//     if (scrollPosition > 10) {
-//         navbar.classList.add('sticky');
-//     } else {
-//         navbar.classList.remove('sticky');
-//     }
-// });
-
 
 const navbar = document.querySelector('.navbar');
 
@@ -54,6 +43,10 @@ var swiper = new Swiper(".mySwiper", {
 		clickable: true,
 	},
 	breakpoints: {
+		200: {
+			slidesPerView: 1,
+			spaceBetween: 15,
+		},
 		320: {
 			slidesPerView: 1,
 			spaceBetween: 15,
