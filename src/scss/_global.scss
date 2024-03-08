@@ -74,12 +74,23 @@ body {
 	overflow: hidden;
 }
 
-// .sticky {
-// 	position: fixed;
-// 	top: 0;
-// 	width: 100%;
-// 	z-index: 1000;
-// }
+.sticky {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	animation-name: navbar;
+	animation-duration: 0.4s;
+	z-index: 1000;
+}
+
+@keyframes navbar {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
 
 .title {
 	font-family: $fontSecondary;

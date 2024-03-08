@@ -168,6 +168,41 @@ body.dark {
   overflow: hidden;
 }
 
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  -webkit-animation-name: navbar;
+          animation-name: navbar;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  z-index: 1000;
+}
+
+@-webkit-keyframes navbar {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes navbar {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 .title {
   font-family: "Playfair Display", serif;
   font-weight: 700;
@@ -595,7 +630,7 @@ body.dark {
 }
 
 .swiper .swiper-pagination-bullet-active {
-  background-color: #34261f;
+  background-color: #c08d6c;
 }
 
 .collection__img {
