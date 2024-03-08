@@ -460,7 +460,8 @@ body.dark {
 }
 
 .hero {
-  background-image: url("../img/hero/hero2.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url("../img/hero/hero12.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url("../img/hero/hero12.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
