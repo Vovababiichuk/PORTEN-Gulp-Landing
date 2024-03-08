@@ -1378,11 +1378,32 @@ input {
 }
 
 @media screen and (max-width: 374.98px) {
+  .novelties__inner--title {
+    font-size: 34px;
+  }
+
+  .articles--title {
+    font-size: 34px;
+  }
+
   .articles__tags {
     font-size: 12px;
     max-height: 50px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+
+  .partners--title {
+    font-size: 34px;
+  }
+
+  .footer__title {
+    font-size: 22px;
+  }
+
+  .footer__about-text,
+  .footer__mailing-text {
+    font-size: 12px;
   }
 }

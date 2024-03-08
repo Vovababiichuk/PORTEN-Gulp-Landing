@@ -27,12 +27,20 @@
 	font-size: 24px;
 	text-transform: uppercase;
 	margin-bottom: 40px;
+
+	@media screen and (max-width: $breakpoint375) {
+		font-size: 22px;
+	}
 }
 
 .footer__about-text,
 .footer__mailing-text {
 	line-height: 1.5;
 	font-size: 14px;
+
+	@media screen and (max-width: $breakpoint375) {
+		font-size: 12px;
+	}
 }
 
 .footer__mailing-text {

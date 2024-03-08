@@ -12,6 +12,10 @@
 
 .articles--title {
 	padding: 60px 0;
+
+	@media screen and (max-width: $breakpoint375) {
+		font-size: 34px;
+	}
 }
 
 .articles__img:nth-of-type(1) {

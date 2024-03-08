@@ -12,6 +12,10 @@
 	@media screen and (max-width: $breakpoint768) {
 		margin-bottom: 70px;
 	}
+
+	@media screen and (max-width: $breakpoint375) {
+		font-size: 34px;
+	}
 }
 
 .novelties__cards-list {
